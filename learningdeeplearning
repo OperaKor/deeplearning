@@ -1,0 +1,233 @@
+##머신 러닝에 앞서 아나콘다를 설치.
+##윈도우 10를 사용중이기 때문에 윈도우 10을 기준으로 
+##http://www.continuum.io/downloads
+##설치 후 Anaconda Prompt 실행
+##아나콘다 환경과 실습용 작업 환경을 tutorial 이란 이름으로 생성하여 저장한답니다.
+
+(base) C:\Users\sk910>conda create -n tutorial python=3.5 numpy scipy matplotlib spyder pandas seaborn scikit-learn h5py
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.5.4
+  latest version: 4.5.9
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+##콘다의 새로운 버전이 있다는데 업데이트 해야하나?
+
+## Package Plan ##
+
+  environment location: C:\Users\sk910\Anaconda3\envs\tutorial
+
+  added / updated specs:
+    - h5py
+    - matplotlib
+    - numpy
+    - pandas
+    - python=3.5
+    - scikit-learn
+    - scipy
+    - seaborn
+    - spyder
+
+
+The following NEW packages will be INSTALLED:
+
+    alabaster:                0.7.11-py35_0
+    asn1crypto:               0.24.0-py35_0
+    astroid:                  1.6.5-py35_0
+    babel:                    2.6.0-py35_0
+    backcall:                 0.1.0-py35_0
+    blas:                     1.0-mkl
+    bleach:                   2.1.3-py35_0
+    ca-certificates:          2018.03.07-0
+    certifi:                  2018.4.16-py35_0
+    cffi:                     1.11.5-py35h945400d_0
+    chardet:                  3.0.4-py35_1
+    cloudpickle:              0.5.3-py35_0
+    colorama:                 0.3.9-py35h32a752f_0
+    cryptography:             2.2.2-py35hfa6e2cd_0
+    cycler:                   0.10.0-py35hcc71164_0
+    decorator:                4.3.0-py35_0
+    docutils:                 0.14-py35h8ccb97f_0
+    entrypoints:              0.2.3-py35hb91ced9_2
+    freetype:                 2.8-h51f8f2c_1
+    h5py:                     2.8.0-py35h3bdd7fb_0
+    hdf5:                     1.10.2-hac2f561_1
+    html5lib:                 1.0.1-py35h047fa9f_0
+    icc_rt:                   2017.0.4-h97af966_0
+    icu:                      58.2-ha66f8fd_1
+    idna:                     2.7-py35_0
+    imagesize:                1.0.0-py35_0
+    intel-openmp:             2018.0.3-0
+    ipykernel:                4.8.2-py35_0
+    ipython:                  6.5.0-py35_0
+    ipython_genutils:         0.2.0-py35ha709e79_0
+    isort:                    4.3.4-py35_0
+    jedi:                     0.12.1-py35_0
+    jinja2:                   2.10-py35_0
+    jpeg:                     9b-hb83a4c4_2
+    jsonschema:               2.6.0-py35h27d56d3_0
+    jupyter_client:           5.2.3-py35_0
+    jupyter_core:             4.4.0-py35h629ba7f_0
+    keyring:                  13.2.1-py35_0
+    kiwisolver:               1.0.1-py35hc605aed_0
+    lazy-object-proxy:        1.3.1-py35he996729_0
+    libpng:                   1.6.34-h79bbb47_0
+    libsodium:                1.0.16-h9d3ae62_0
+    markupsafe:               1.0-py35hc253e08_1
+    matplotlib:               2.2.2-py35h153e9ff_1
+    mccabe:                   0.6.1-py35hcf31250_1
+    mistune:                  0.8.3-py35hfa6e2cd_1
+    mkl:                      2018.0.3-1
+    mkl_fft:                  1.0.4-py35h1e22a9b_1
+    mkl_random:               1.0.1-py35h9258bd6_0
+    nbconvert:                5.3.1-py35h98d6c46_0
+    nbformat:                 4.4.0-py35h908c9d9_0
+    numpy:                    1.15.0-py35h9fa60d3_0
+    numpy-base:               1.15.0-py35h4a99626_0
+    numpydoc:                 0.8.0-py35_0
+    openssl:                  1.0.2o-h8ea7d77_0
+    packaging:                17.1-py35_0
+    pandas:                   0.23.3-py35h830ac7b_0
+    pandoc:                   2.2.1-h1a437c5_0
+    pandocfilters:            1.4.2-py35h978f723_1
+    parso:                    0.3.1-py35_0
+    patsy:                    0.5.0-py35_0
+    pickleshare:              0.7.4-py35h2f9f535_0
+    pip:                      10.0.1-py35_0
+    prompt_toolkit:           1.0.15-py35h89c7cb4_0
+    psutil:                   5.4.6-py35hfa6e2cd_0
+    pycodestyle:              2.4.0-py35_0
+    pycparser:                2.18-py35h15a15da_1
+    pyflakes:                 2.0.0-py35_0
+    pygments:                 2.2.0-py35h24c0941_0
+    pylint:                   1.9.2-py35_0
+    pyopenssl:                18.0.0-py35_0
+    pyparsing:                2.2.0-py35hcabcaab_1
+    pyqt:                     5.9.2-py35h1aa27d4_0
+    pysocks:                  1.6.8-py35_0
+    python:                   3.5.5-h0c2934d_2
+    python-dateutil:          2.7.3-py35_0
+    pytz:                     2018.5-py35_0
+    pywin32:                  223-py35hfa6e2cd_1
+    pyzmq:                    17.0.0-py35hfa6e2cd_1
+    qt:                       5.9.6-vc14h62aca36_0
+    qtawesome:                0.4.4-py35h639d0ff_0
+    qtconsole:                4.3.1-py35hc47b0dd_0
+    qtpy:                     1.4.2-py35_0
+    requests:                 2.19.1-py35_0
+    rope:                     0.10.7-py35h5756fe0_0
+    scikit-learn:             0.19.1-py35h2037775_0
+    scipy:                    1.1.0-py35h672f292_0
+    seaborn:                  0.9.0-py35_0
+    setuptools:               39.2.0-py35_0
+    simplegeneric:            0.8.1-py35_2
+    sip:                      4.19.8-py35h6538335_0
+    six:                      1.11.0-py35_1
+    snowballstemmer:          1.2.1-py35h4c55bfa_0
+    sphinx:                   1.7.6-py35_0
+    sphinxcontrib:            1.0-py35h45f5ca3_1
+    sphinxcontrib-websupport: 1.1.0-py35_1
+    spyder:                   3.3.0-py35_0
+    spyder-kernels:           0.2.4-py35_0
+    sqlite:                   3.24.0-h7602738_0
+    statsmodels:              0.9.0-py35h452e1ab_0
+    testpath:                 0.3.1-py35h06cf69e_0
+    tornado:                  5.0.2-py35_0
+    traitlets:                4.3.2-py35h09b975b_0
+    urllib3:                  1.23-py35_0
+    vc:                       14.1-h0510ff6_3
+    vs2015_runtime:           15.5.2-3
+    wcwidth:                  0.1.7-py35h6e80d8a_0
+    webencodings:             0.5.1-py35h5d527fb_1
+    wheel:                    0.31.1-py35_0
+    win_inet_pton:            1.0.1-py35hbef1270_1
+    win_unicode_console:      0.5-py35h56988b5_0
+    wincertstore:             0.2-py35hfebbdb8_0
+    wrapt:                    1.10.11-py35h54666f7_0
+    zeromq:                   4.2.5-he025d50_1
+    zlib:                     1.2.11-h8395fce_2
+
+##y를 눌러서 계속 진행해줍니다.
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: / DEBUG menuinst_win32:__init__(196): Menu: name: 'Anaconda${PY_VER} ${PLATFORM}', prefix: 'C:\Users\sk910\Anaconda3\envs\tutorial', env_name: 'tutorial', mode: 'user', used_mode: 'user'
+DEBUG menuinst_win32:create(320): Shortcut cmd is C:\Users\sk910\Anaconda3\pythonw.exe, args are ['C:\\Users\\sk910\\Anaconda3\\cwp.py', 'C:\\Users\\sk910\\Anaconda3\\envs\\tutorial', 'C:\\Users\\sk910\\Anaconda3\\envs\\tutorial\\pythonw.exe', 'C:\\Users\\sk910\\Anaconda3\\envs\\tutorial\\Scripts\\spyder-script.py']
+- DEBUG menuinst_win32:create(320): Shortcut cmd is C:\Users\sk910\Anaconda3\python.exe, args are ['C:\\Users\\sk910\\Anaconda3\\cwp.py', 'C:\\Users\\sk910\\Anaconda3\\envs\\tutorial', 'C:\\Users\\sk910\\Anaconda3\\envs\\tutorial\\python.exe', 'C:\\Users\\sk910\\Anaconda3\\envs\\tutorial\\Scripts\\spyder-script.py', '--reset']
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate tutorial
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+##activate tutorial 실행
+(base) C:\Users\sk910>activate tutorial
+
+(tutorial) C:\Users\sk910>pip install tensorflow
+##책에서 이렇게 하라 해서 텐서플로우를 설치해보려 했으나...
+Collecting tensorflow
+  Using cached https://files.pythonhosted.org/packages/55/02/e07e6ff277147aa52816215cc1b96d1acd1166411fc71356c6c3160760ca/tensorflow-1.9.0-cp35-cp35m-win_amd64.whl
+Collecting astor>=0.6.0 (from tensorflow)
+  Using cached https://files.pythonhosted.org/packages/35/6b/11530768cac581a12952a2aad00e1526b89d242d0b9f59534ef6e6a1752f/astor-0.7.1-py2.py3-none-any.whl
+Requirement already satisfied: wheel>=0.26 in c:\users\sk910\anaconda3\envs\tutorial\lib\site-packages (from tensorflow) (0.31.1)
+Collecting protobuf>=3.4.0 (from tensorflow)
+  Using cached https://files.pythonhosted.org/packages/f0/7d/1145805ef3ac475074f8d14d1c0512a79ef709ddfd35ca89c5fa4fc94065/protobuf-3.6.0-cp35-cp35m-win_amd64.whl
+Collecting absl-py>=0.1.6 (from tensorflow)
+Collecting grpcio>=1.8.6 (from tensorflow)
+  Using cached https://files.pythonhosted.org/packages/f4/6a/ad4a8ee21edd417274cb2327045ac59fc5d05b8764d4663c356c24a128e0/grpcio-1.13.0-cp35-cp35m-win_amd64.whl
+Requirement already satisfied: numpy>=1.13.3 in c:\users\sk910\anaconda3\envs\tutorial\lib\site-packages (from tensorflow) (1.15.0)
+Collecting setuptools<=39.1.0 (from tensorflow)
+  Using cached https://files.pythonhosted.org/packages/8c/10/79282747f9169f21c053c562a0baa21815a8c7879be97abd930dbcf862e8/setuptools-39.1.0-py2.py3-none-any.whl
+Collecting tensorboard<1.10.0,>=1.9.0 (from tensorflow)
+  Using cached https://files.pythonhosted.org/packages/9e/1f/3da43860db614e294a034e42d4be5c8f7f0d2c75dc1c428c541116d8cdab/tensorboard-1.9.0-py3-none-any.whl
+Collecting termcolor>=1.1.0 (from tensorflow)
+Requirement already satisfied: six>=1.10.0 in c:\users\sk910\anaconda3\envs\tutorial\lib\site-packages (from tensorflow) (1.11.0)
+Collecting gast>=0.2.0 (from tensorflow)
+Collecting werkzeug>=0.11.10 (from tensorboard<1.10.0,>=1.9.0->tensorflow)
+  Using cached https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl
+Collecting markdown>=2.6.8 (from tensorboard<1.10.0,>=1.9.0->tensorflow)
+  Using cached https://files.pythonhosted.org/packages/6d/7d/488b90f470b96531a3f5788cf12a93332f543dbab13c423a5e7ce96a0493/Markdown-2.6.11-py2.py3-none-any.whl
+
+##시도의 흔적..
+
+mkl-fft 1.0.4 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+
+##cython???이걸 어떻게 까는거지?
+##파이썬은 깔려 있는데..
+
+
+Installing collected packages: astor, setuptools, protobuf, absl-py, grpcio, werkzeug, markdown, tensorboard, termcolor, gast, tensorflow
+  Found existing installation: setuptools 39.2.0
+    Uninstalling setuptools-39.2.0:
+      Successfully uninstalled setuptools-39.2.0
+Successfully installed absl-py-0.3.0 astor-0.7.1 gast-0.2.0 grpcio-1.13.0 markdown-2.6.11 protobuf-3.6.0 setuptools-39.1.0 tensorboard-1.9.0 tensorflow-1.9.0 termcolor-1.1.0 werkzeug-0.14.1
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+##업그레이드도 하라 하네요
+
+(tutorial) C:\Users\sk910>python -m pip install --upgrade pip
+Collecting pip
+  Using cached https://files.pythonhosted.org/packages/5f/25/e52d3f31441505a5f3af41213346e5b6c221c9e086a166f3703d2ddaf940/pip-18.0-py2.py3-none-any.whl
+mkl-fft 1.0.4 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+Installing collected packages: pip
+  Found existing installation: pip 10.0.1
+    Uninstalling pip-10.0.1:
+      Successfully uninstalled pip-10.0.1
+Successfully installed pip-18.0
+
+##업그레이드 했습니다.
+
+##cython이 뭔지 찾으러 떠나야겠습니다.
