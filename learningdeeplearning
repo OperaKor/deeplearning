@@ -235,3 +235,49 @@ Successfully installed pip-18.0
 2018.08.02
 
 ##https://github.com/AnacondaRecipes/aggregate/issues/53
+##파이썬을 실행하라 해서 파이썬에다가 직접 쳤었는데.. 방법이 잘못됐었습니다.
+##아나콘다 프롬프트에서 파이썬을 실행합시다.
+
+
+(tutorial) C:\Users\sk910>python
+Python 3.5.5 |Anaconda, Inc.| (default, Apr  7 2018, 04:52:34) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+>>> printf(tf.__version__)
+##잘 깔렸는지 버전 확인
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'printf' is not defined
+>>> print(tf.__version__)
+1.9.0
+>>> exit()
+
+##케라스도 설치해줍시다.
+(tutorial) C:\Users\sk910>pip install keras
+Collecting keras
+  Downloading https://files.pythonhosted.org/packages/34/7d/b1dedde8af99bd82f20ed7e9697aac0597de3049b1f786aa2aac3b9bd4da/Keras-2.2.2-py2.py3-none-any.whl (299kB)
+    100% |################################| 307kB 3.3MB/s
+Collecting keras-applications==1.0.4 (from keras)
+  Downloading https://files.pythonhosted.org/packages/54/90/8f327deaa37a71caddb59b7b4aaa9d4b3e90c0e76f8c2d1572005278ddc5/Keras_Applications-1.0.4-py2.py3-none-any.whl (43kB)
+    100% |################################| 51kB 3.3MB/s
+Requirement already satisfied: six>=1.9.0 in c:\users\sk910\anaconda3\envs\tutorial\lib\site-packages (from keras) (1.11.0)
+Collecting pyyaml (from keras)
+  Downloading https://files.pythonhosted.org/packages/ad/d4/d895fb7ac1b0828151b829a32cefc8a8b58b4499570520b91af20982b880/PyYAML-3.13-cp35-cp35m-win_amd64.whl (205kB)
+    100% |################################| 215kB 3.3MB/s
+Requirement already satisfied: h5py in c:\users\sk910\anaconda3\envs\tutorial\lib\site-packages (from keras) (2.8.0)
+Collecting keras-preprocessing==1.0.2 (from keras)
+  Downloading https://files.pythonhosted.org/packages/71/26/1e778ebd737032749824d5cba7dbd3b0cf9234b87ab5ec79f5f0403ca7e9/Keras_Preprocessing-1.0.2-py2.py3-none-any.whl
+Requirement already satisfied: scipy>=0.14 in c:\users\sk910\anaconda3\envs\tutorial\lib\site-packages (from keras) (1.1.0)
+Requirement already satisfied: numpy>=1.9.1 in c:\users\sk910\anaconda3\envs\tutorial\lib\site-packages (from keras) (1.15.0)
+Installing collected packages: keras-applications, pyyaml, keras-preprocessing, keras
+Successfully installed keras-2.2.2 keras-applications-1.0.4 keras-preprocessing-1.0.2 pyyaml-3.13
+
+##똑같이 확인
+(tutorial) C:\Users\sk910>python
+Python 3.5.5 |Anaconda, Inc.| (default, Apr  7 2018, 04:52:34) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import keras
+Using TensorFlow backend.
+>>> exit()
+
+2018.08.03
